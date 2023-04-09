@@ -1,0 +1,14 @@
+.search-input {
+  height: 40px;
+}
+
+.save-btn,
+.btn-current {
+  background-color: #ed7135;
+  transition-duration: 300ms;
+}
+
+.btn-filter:is(:hover, :focus) {
+  background-color: #ed7135 !important;
+  color: #ffffff !important;
+}
