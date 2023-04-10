@@ -7,7 +7,7 @@ const formSelect = document.querySelector('.form-select');
 const html = document.querySelector('html');
 
 html.dataset.bsTheme = JSON.parse(localStorage.getItem('theme'));
-formSelect.value = JSON.parse(localStorage.getItem('theme'));
+formSelect.value = JSON.parse(localStorage.getItem('theme')) || 'light';
 const changeTheme = (e) => {
   const { target } = e;
   localStorage.setItem('theme', JSON.stringify(target.value));
